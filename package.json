@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "name": "spy_cam",
+  "version": "1.0.0",
+  "description": "A page for receiving images via GCP pubsub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/pubsub": "^3.3.0",
+    "ejs": "^3.1.6",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0"
+  }
+}
