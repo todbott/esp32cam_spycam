@@ -10,9 +10,14 @@ app.get('/', async (req, res) => {
     let jdata = JSON.stringify(pics)
     let p = ""
     Object.entries(pics.data).forEach(([key, val]) => {
-        p = `<img src="data:image/jpeg;base64, ${val}" id="feed">`
+        p += `<div class="mySlides fade">
+                <img src="data:image/jpeg;base64, ${val}">
+                <div class="text">${key}</div>
+              </div>`
+
+      
     });
-    res.render('pages/page', {image: p})
+    res.render('pages/page', {slides: p})
     
 });
 
