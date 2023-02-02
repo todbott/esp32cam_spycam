@@ -14,8 +14,6 @@ app.get('/', async (req, res) => {
                 <img src="data:image/jpeg;base64, ${val}">
                 <div class="text">${key}</div>
               </div>`
-
-      
     });
     res.render('pages/page', {slides: p})
     
